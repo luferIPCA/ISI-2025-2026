@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://ola.como.estas/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://ola.como.estas/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ola.como.estas/">
+      <s:element name="Soma">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SomaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SomaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SomaSoapIn">
+    <wsdl:part name="parameters" element="tns:Soma" />
+  </wsdl:message>
+  <wsdl:message name="SomaSoapOut">
+    <wsdl:part name="parameters" element="tns:SomaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CalcSimplesSoap">
+    <wsdl:operation name="Soma">
+      <wsdl:input message="tns:SomaSoapIn" />
+      <wsdl:output message="tns:SomaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CalcSimplesSoap" type="tns:CalcSimplesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Soma">
+      <soap:operation soapAction="http://ola.como.estas/Soma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CalcSimplesSoap12" type="tns:CalcSimplesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Soma">
+      <soap12:operation soapAction="http://ola.como.estas/Soma" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CalcSimples">
+    <wsdl:port name="CalcSimplesSoap" binding="tns:CalcSimplesSoap">
+      <soap:address location="http://localhost:64019/Services/CalcSimples.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CalcSimplesSoap12" binding="tns:CalcSimplesSoap12">
+      <soap12:address location="http://localhost:64019/Services/CalcSimples.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
