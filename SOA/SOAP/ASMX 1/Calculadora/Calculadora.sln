@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinCalc", "WinCalc\WinCalc.csproj", "{8DC4C47D-4D58-480E-8E87-C78B717F3B39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsaWSCalc", "UsaWSCalc\UsaWSCalc.csproj", "{3B0427F8-28D6-460D-AA0A-C56DD47ABE14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DC4C47D-4D58-480E-8E87-C78B717F3B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC4C47D-4D58-480E-8E87-C78B717F3B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC4C47D-4D58-480E-8E87-C78B717F3B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC4C47D-4D58-480E-8E87-C78B717F3B39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B0427F8-28D6-460D-AA0A-C56DD47ABE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B0427F8-28D6-460D-AA0A-C56DD47ABE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B0427F8-28D6-460D-AA0A-C56DD47ABE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B0427F8-28D6-460D-AA0A-C56DD47ABE14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25245378-35A9-41B0-9096-66D8CCA37FF4}
+	EndGlobalSection
+EndGlobal

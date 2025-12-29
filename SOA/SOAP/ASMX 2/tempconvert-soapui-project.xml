@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a1225d84-5de6-4000-b032-34edd84f5dd3" activeEnvironment="Default" name="tempconvert" resourceRoot="${projectDir}" soapui-version="5.7.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
