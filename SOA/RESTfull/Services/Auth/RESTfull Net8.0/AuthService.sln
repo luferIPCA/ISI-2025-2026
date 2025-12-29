@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthRest", "OAuthService\AuthRest.csproj", "{912BF80F-F647-4B6B-B488-3C6D71C82C3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{912BF80F-F647-4B6B-B488-3C6D71C82C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{912BF80F-F647-4B6B-B488-3C6D71C82C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{912BF80F-F647-4B6B-B488-3C6D71C82C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{912BF80F-F647-4B6B-B488-3C6D71C82C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78EC8CC6-DE94-426C-8D83-A777A550E597}
+	EndGlobalSection
+EndGlobal
